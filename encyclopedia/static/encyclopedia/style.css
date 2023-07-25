@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+:root {
+  --primaryColor: #051838;
+  --2ndColor: #152C55;
+  --3rdColor: #2D4671;
+  --4thColor: #4D658D;
+  --5thColor: #7689A9;
+  --mainWhite: #edf4ff;
+  --mainGray: #b1b6be;
+  --bodyColor: #f3f3f3;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bodyColor);
+  font-family: Montserrat;
+}
+
+p {
+  font-size: 1.3rem;
+  margin: 15px;
+  color: var(--3rdColor);
+}
+
+code {
+  white-space: pre;
+}
+
+h1 {
+  margin: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: var(--primaryColor);
+}
+
+textarea {
+  height: 60vh;
+  width: 80%;
+  background-color: var(--mainWhite);
+  border: 2px solid var(--2ndColor);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.main {
+  padding: 10px;
+}
+
+.search {
+  width: 110%;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--3rdColor);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--mainGray);
+  height: 110vh;
+  padding: 30px;
+}
+
+.sidebar h1 {
+  margin-top: 5px;
+  color: var(--primaryColor);
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+form {
+  display: flex !important;
+  flex-direction: column;
+  margin: 20px;
+}
+
+input {
+  max-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--mainWhite);
+  border: 2px solid var(--2ndColor);
+  border-radius: 10px;
+  height: 2.2rem;
+  padding: 5px;
+}
+
+a {
+  color: var(--4thColor);
+}
+
+a:hover {
+  color: var(--2ndColor);
+}
+
+.btn {
+  background-color: var(--5thColor);
+  color: var(--primaryColor);
+  border: 2px solid var(--2ndColor);
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.btn-primary:hover {
+  background-color: var(--primaryColor) !important;
+  color: var(--mainWhite) !important;
+  border: 2px solid var(--2ndColor);
+  border-radius: 10px;
+}
+
+.side {
+  margin: 10px;
+  font-size: 1.3rem;
+}
+
+li {
+  margin: 10px;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=style.css.map */

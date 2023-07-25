@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create New Page
+{% endblock %}
+
+{% block body %}
+
+  <h1>Create a new Wikipedia article: </h1>
+
+  <p>Use the form below to create a new Wikipedia article.</p>
+  <p>Wikipedia uses <a href="https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">Github Markdown</a> to style its pages, so you should fill out this form using it.</p>
+
+  
+  <form action="{% url 'create' %}" method="post">
+    {{ create_form|safe }}
+    {{form.as_p|safe}}
+    {% csrf_token %}
+    <input class= "btn btn-primary" type="submit" value="Submit">
+  </form>
+
+{% endblock %}
